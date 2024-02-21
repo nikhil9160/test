@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stunning ChatGPT</title>
+</head>
+<body>
+
+<div class="container">
+    <h1><span class="auto-type"></span></h1><br>
+   <a href=https://chat.openai.com/> <button id="openChatBtn">Open ChatGPT</button></a><br><br>
+   <a href=https://gamma.app/> <button id="openChatBtn">Gamma AI</button></a><br><br>
+   <a href=https://www.krea.ai/> <button id="openChatBtn">Text To image</button></a><br><br>
+   <a href=https://aicodeplayground.com/  > <button id="openChatBtn">AI Code Playground</button></a><br><br>
+ <a href=  https://aicodeconvert.com/   > <button id="openChat">AI Code Converter</button></a><br><br>
+</div>
+
+
+
+<style>body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>document.getElementById('openChatBtn').addEventListener('click', function () {
+    // Toggle the display of the chat container
+    document.getElementById('chatContainer').style.display = 'block';
+
+    // You can add further logic here to integrate with a chat service or ChatGPT API.
+    // For simplicity, we are just displaying a message for demonstration purposes.
+    document.getElementById('chatContainer').innerHTML = '<p>Chat interface will be here...</p>';
+});
+
+var typed = new Typed(".auto-type",{
+        strings : [ "Welcome to Stunning ChatGPT"],
+        typeSpeed : 150,
+        backSpeed:150,
+        loop:true
+        });
+</script>
+</body>
+</html>
